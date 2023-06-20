@@ -119,11 +119,11 @@ body{
 }
 .media-icons a{
   text-align: center;
-  line-height: 33px;
-  height: 35px;
-  width: 35px;
-  margin: 0 4px;
-  font-size: 14px;
+  line-height: 55px;
+  height: 60px;
+  width: 60px;
+  margin: 0 16px;
+  font-size: 28px;
   color: #FFF;
   border-radius: 50%;
   border: 2px solid transparent;
