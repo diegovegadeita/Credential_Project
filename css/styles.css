@@ -115,8 +115,8 @@ body{
 .media-icons{
   margin-top: 15px;
   display: flex;
-
 }
+
 .media-icons a{
   display: block;
   text-align: center;
@@ -135,4 +135,23 @@ body{
   color: #00893d;
   background-color: #fff;
   border-color: #00893d;
+}
+
+
+.media-icons-custom{
+  margin-top: 1px;
+  display: flex;
+}
+
+
+.media-icons-custom a{
+  display: block;
+  text-align: center;
+  line-height:47px;
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+  font-size: 32px;
+  color: #FFF;
+  border-radius: 50%;
 }
