@@ -1,183 +1,218 @@
 <!DOCTYPE html>
-<html lang="esp">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Slider |Dev Mode</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-</head>
-<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <section class="swiper mySwiper">
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <div class="swiper-wrapper">
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-      <div class="card swiper-slide">
-        <div class="card__image">
-          <img src="images/user1.jpg" alt="card image">
-        </div>
+        <title>Portfolio responsive complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Jhon Doe</a>
+                </div>
 
-        <div class="card__content">
-          <span class="card__title">Daniel Samperio</span>
-          <span class="card__name">Program Manager</span>
-          <p class="card__text">Responsible for the implementation of 4.0 technology in the production plants of the Mexico.</p>
-          <div class="media-icons-custom">
-            <a href="mailto:vegadeg@schaeffler.com?subject=subject&body=body"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#646464}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
-            <a href="mailto:vegadeg@schaeffler.com?subject=subject&body=body"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#646464}</style><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></a>
-            <a href="mailto:vegadeg@schaeffler.com?subject=subject&body=body"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#646464}</style><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a>
-          </div>
-          <div class="media-icons">
-            <a href="https://www.linkedin.com/in/daniel-jaime-samperio-gutiérrez-28337711a"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:vegadeg@schaeffler.com?subject=subject&body=body"><i class="far fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-phone"></i></a>
-          </div>
-        </div>
-      </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-      <div class="card swiper-slide">
-        <div class="card__image">
-          <img src="images/user2.jpg" alt="card image">
-        </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-        <div class="card__content">
-          <span class="card__title">Valeria Canchola</span>
-          <span class="card__name">Project Manager</span>
-          <p class="card__text">Manage,administrate and develop projects and new ideas in the Digitalization department.</p>
-            <div class="media-icons-custom">
-            <a href="mailto:vegadeg@schaeffler.com?subject=subject&body=body"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#646464}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
-            <a href="mailto:vegadeg@schaeffler.com?subject=subject&body=body"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#646464}</style><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></a>
-            <a href="mailto:vegadeg@schaeffler.com?subject=subject&body=body"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#646464}</style><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a>
-          </div>
-          <div class="media-icons">
-            <a href="https://www.linkedin.com/in/valeria-michelle-canchola-quevedo-7b19841b8"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="far fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-phone"></i></a>
-          </div>
-        </div>
-      </div>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
 
-      <div class="card swiper-slide">
-        <div class="card__image">
-          <img src="images/user3.png" alt="card image">
-        </div>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                    </div>
 
-        <div class="card__content">
-          <span class="card__title">Daniela García M.</span>
-          <span class="card__name">Project Manager</span>
-          <p class="card__text">Manage,administrate and develop projects and new ideas in the Digitalization department.</p>
-          <div class="media-icons">
-            <a href="https://www.linkedin.com/in/daniela-garcía-márquez-2a3a21192"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="far fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-phone"></i></a>
-          </div>
-        </div>
-      </div>
+                    <img src="assets/img/perfil.png" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
 
-      <div class="card swiper-slide">
-        <div class="card__image">
-          <img src="images/user4.jpg" alt="card image">
-        </div>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/perfil.png" alt="">
+                    </div>
 
-        <div class="card__content">
-          <span class="card__title">Noema Santoyo</span>
-          <span class="card__name">Data Scientist</span>
-          <p class="card__text">Development of projects using big data, data modeling, data analyst and machine learning.</p>
-          <div class="media-icons">
-            <a href="https://www.linkedin.com/in/noema-santoyo-62547927b"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="far fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-phone"></i></a>
-          </div>
-        </div>
-      </div>
+                    <div>
+                        <h2 class="about__subtitle">I'am Jhon Doe</h2>
+                        <span class="about__profession">Web designer</span>
+                        <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
 
-      <div class="card swiper-slide">
-        <div class="card__image">
-          <img src="images/user5.jpg" alt="card image">
-        </div>
+                        <div class="about__social">
+                            <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="#" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                            <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <div class="card__content">
-          <span class="card__title">Alfredo Rueda</span>
-          <span class="card__name">Automation Engineer</span>
-          <p class="card__text">Development of projects using big data, data modeling, data analyst and machine learning.</p>
-          <div class="media-icons">
-            <a href="https://www.linkedin.com/in/josé-alfredo-rueda-salinas-119161241"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="far fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-phone"></i></a>
-          </div>
-        </div>
-      </div>
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
-      <div class="card swiper-slide">
-        <div class="card__image">
-          <img src="images/user6.png" alt="card image">
-        </div>
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        <h3 class="skills__subtitle">Development</h3>
+                        <span class="skills__name">Html</span>
+                        <span class="skills__name">Css</span>
+                        <span class="skills__name">Javascript</span>
+                        <span class="skills__name">Scss</span>
+                        <span class="skills__name">React</span>
+                        <span class="skills__name">Vue</span>
+                        
+                        <h3 class="skills__subtitle">Design</h3>
+                        <span class="skills__name">Figma</span>
+                        <span class="skills__name">Adobe XD</span>
+                        <span class="skills__name">Photoshop</span>
+                    </div>
 
-        <div class="card__content">
-          <span class="card__title">Ricardo Bernal</span>
-          <span class="card__name">Automation Co-oP</span>
-          <p class="card__text">Development of projects using big data, data modeling, data analyst and machine learning.</p>
-          <div class="media-icons">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="far fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-phone"></i></a>
-          </div>
-        </div>
-      </div>
+                    <div class="skills__img">
+                        <img src="assets/img/skill.jpg" alt="">
+                    </div>
+                </div>
+            </section>
 
-      <div class="card swiper-slide">
-        <div class="card__image">
-          <img src="images/user7.jpg" alt="card image">
-        </div>
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Portfolio</h2>
 
-        <div class="card__content">
-          <span class="card__title">Diego Vega</span>
-          <span class="card__name">Software Developer</span>
-          <p class="card__text">Develop, deploy and manage system developments in Mexico subregion reaching saving targets.</p>
-          <div class="media-icons">
-            <a href="https://www.linkedin.com/in/diego-vega-61079523b"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="far fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-phone"></i></a>
-          </div>
-        </div>
-      </div>
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                        <img src="assets/img/work1.jpg" alt="">
 
-    </div>
-  </section>
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work2.jpg" alt="">
 
-  
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work3.jpg" alt="">
 
-<!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work4.jpg" alt="">
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 300,
-        modifier: 1,
-        slideShadows: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work5.jpg" alt="">
 
-    function SendMail(){
-      window.location.href = "mailto:vegadeg@schaeffler.com?subject=subject&body=body"
-    }
-  </script>
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work6.jpg" alt="">
 
-</body>
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">info.mail.com</span>
+
+                        <h3 class="contact__subtitle">PHONE</h3>
+                        <span class="contact__text">+20 999-999</span>
+
+                        <h3 class="contact__subtitle">ADRESS</h3>
+                        <span class="contact__text">My contry</span>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Enviar" class="contact__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">JHON DOE</h2>
+                    <p class="footer__text">I'm Jhon Doe and this is my personal website</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                </div>
+
+
+            </div>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
