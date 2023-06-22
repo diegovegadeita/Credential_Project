@@ -113,20 +113,21 @@ body{
 
 
 .media-icons{
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
 
 }
 .media-icons a{
+  display: block;
   text-align: center;
-  line-height: 55px;
-  height: 60px;
-  width: 60px;
-  margin: 0 16px;
-  font-size: 28px;
+  line-height:47px;
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+  font-size: 22px;
   color: #FFF;
   border-radius: 50%;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   background: #00893d;
   transition: all 0.3s ease;
 }
