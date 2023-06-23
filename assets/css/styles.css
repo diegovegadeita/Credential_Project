@@ -157,6 +157,7 @@ img{
     color: var(--white-color);
     font-size: 1.5rem;
     cursor: pointer;
+    position: right;
 }
 
 /*=== Show menu ===*/
