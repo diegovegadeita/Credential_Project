@@ -1,110 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Slider |Dev Mode</title>
+    <html lang="esp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-</head>
-<body>
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-  <section class="swiper mySwiper">
+        <title></title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo"></a>
+                </div>
+            </nav>
+        </header>
 
-    <div class="swiper-wrapper">
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
 
-      <div class="card swiper-slide">
-        <div class="card__image">
-          <img src="images/user1.jpg" alt="card image">
-        </div>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                    </div>
 
-        <div class="card__content">
-          <span class="card__title">Web Designer</span>
-          <span class="card__name">Vanessa Martinez</span>
-          <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-          <div class="media-icons">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="far fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-phone"></i></a>
-          </div>
-        </div>
-      </div>
+                    <img src="assets/img/santonem.png" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
 
-      <div class="card swiper-slide">
-        <div class="card__image">
-          <img src="images/user2.jpg" alt="card image">
-        </div>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/santonem.png" alt="">
+                    </div>
 
-        <div class="card__content">
-          <span class="card__title">Ui Designer</span>
-          <span class="card__name">Sarah Bowen</span>
-          <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-          <button class="card__btn">View More</button>
-        </div>
-      </div>
+                    <div>
+                        <h2 class="about__subtitle">I'am Noema Santoyo</h2>
+                        <span class="about__profession">Data Scientist</span>
+                        <p class="about__text">Dedicated to development of projects and new ideas in the Digitalization departmentusing big data, data modeling, data analystand machine learning.</p>
+                        <div class="about__social">
+                            <a href="https://linkedin.com/in/noema-santoyo-62547927b" class="about__social-icon"><i class='bx bxl-linkedin'></i></a>
+                            <a href="mailto:santonem@schaeffler.com?subject=subject&body=Hola Noema," class="about__social-icon"><i class='bx bx-envelope'></i></a>
+                            <a href="tel:462-166-1198" class="about__social-icon"><i class='bx bxs-phone'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <div class="card swiper-slide">
-        <div class="card__image">
-          <img src="images/user3.jpg" alt="card image">
-        </div>
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
-        <div class="card__content">
-          <span class="card__title">Web Developer</span>
-          <span class="card__name">David Murphy</span>
-          <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-          <button class="card__btn">View More</button>
-        </div>
-      </div>
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        <h3 class="skills__subtitle"></h3>
+                        <span class="skills__name"></span>
+                        <span class="skills__name"></span>
+                        <span class="skills__name"></span>
+                        <span class="skills__name"></span>
+                        <span class="skills__name"></span>
+                        <span class="skills__name"></span>
+                        
+                        <h3 class="skills__subtitle"></h3>
+                        <span class="skills__name"></span>
+                        <span class="skills__name"></span>
+                        <span class="skills__name"></span>
+                    </div>
 
-      <div class="card swiper-slide">
-        <div class="card__image">
-          <img src="images/user4.jpg" alt="card image">
-        </div>
+                    <div class="skills__img">
+                        <img src="assets/img/cobot.png" alt="">
+                    </div>
+                </div>
+            </section>
 
-        <div class="card__content">
-          <span class="card__title">Mobile Designer</span>
-          <span class="card__name">Kelsey West</span>
-          <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-          <button class="card__btn">View More</button>
-        </div>
-      </div>
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
 
-    </div>
-  </section>
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text"><a href="mailto:santonem@schaeffler.com?subject=subject&body=Hola Noema,">santonem@schaeffler.com</a></span>
 
-  
+                        <h3 class="contact__subtitle">PHONE</h3>
+                        <span class="contact__text"><a href="tel:462-166-1198">+52 (462) 166-1198 </a></span>
 
-<!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+                        <h3 class="contact__subtitle">ADRESS</h3>
+                        <span class="contact__text"><a href="https://goo.gl/maps/rRHQbr8sfFNESfE6A">Av. Río, San Lorenzo No.888, 36557 Irapuato, Gto. México.</a></span>
+                    </div>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 300,
-        modifier: 1,
-        slideShadows: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  </script>
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
 
-</body>
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Enviar" class="contact__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">SCHAEFFLER</h2>
+                    <p class="footer__text"><a href="https://www.schaeffler.com/">https://www.schaeffler.com/</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
